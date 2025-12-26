@@ -1,0 +1,378 @@
+export interface Product {
+  id: string;
+  name: string;
+  brand: string;
+  badge: string;
+  amazonLink: string;
+  image: string;
+  bullets: string[];
+  perfectFor: string;
+  watchOut: string;
+  specs: {
+    bestFor: string;
+    mopping: string;
+    dock: string;
+    obstacleAvoidance: 'Basis' | 'Goed' | 'Excellent';
+    pets: boolean;
+    note: string;
+  };
+  quizScore: {
+    hardFloors: number;
+    mixed: number;
+    carpet: number;
+    lightMopping: number;
+    kitchenStains: number;
+    premiumStation: number;
+    noPets: number;
+    shortHair: number;
+    longHair: number;
+    clean: number;
+    obstacles: number;
+    lowFurniture: number;
+    basicEmpty: number;
+    mopClean: number;
+    mostAutomatic: number;
+  };
+}
+
+export const products: Product[] = [
+  {
+    id: 'qrevo-curv',
+    name: 'Roborock Qrevo Curv',
+    brand: 'Roborock',
+    badge: 'Beste overall',
+    amazonLink: 'https://amzn.to/3NgHWmr',
+    image: '/images/products/roborock-qrevo-curv.jpg',
+    bullets: [
+      'Sterk op gemengde vloeren (tegels + kleden)',
+      'Dock handelt legen + dweilen automatisch af',
+      'Uitstekende obstakel herkenning',
+      'Goed voor huisdieren (anti-klit borstel)',
+      'Premium maar compleet pakket',
+    ],
+    perfectFor: 'Perfect als je vooral gemak wilt en niet wil tweaken in instellingen.',
+    watchOut: 'Premium prijs — kies midrange als je vooral stofzuigt.',
+    specs: {
+      bestFor: 'Meeste huizen (all-round)',
+      mopping: 'Dubbele roterende dweilpads',
+      dock: 'Legen + wassen + drogen',
+      obstacleAvoidance: 'Excellent',
+      pets: true,
+      note: 'Beste "koop 1x, klaar" optie',
+    },
+    quizScore: {
+      hardFloors: 9,
+      mixed: 10,
+      carpet: 8,
+      lightMopping: 8,
+      kitchenStains: 9,
+      premiumStation: 10,
+      noPets: 9,
+      shortHair: 10,
+      longHair: 9,
+      clean: 9,
+      obstacles: 10,
+      lowFurniture: 7,
+      basicEmpty: 7,
+      mopClean: 9,
+      mostAutomatic: 10,
+    },
+  },
+  {
+    id: 'saros-10r',
+    name: 'Roborock Saros 10R',
+    brand: 'Roborock',
+    badge: 'Beste voor lage meubels',
+    amazonLink: 'https://amzn.to/4q0VvoU',
+    image: '/images/products/roborock-saros-10r.jpg',
+    bullets: [
+      'Laagste profiel (<9cm) — komt overal onder',
+      'Premium navigatie met laser + AI',
+      'Roller mop systeem voor grondige reiniging',
+      'Multifunctionele dock (legen/wassen/drogen)',
+      'Zeer stil tijdens gebruik',
+    ],
+    perfectFor: 'Perfect als je lage bedden/banken hebt waar andere robots niet onder kunnen.',
+    watchOut: 'Topprijs — alleen nodig als je echt lage meubels hebt.',
+    specs: {
+      bestFor: 'Lage meubels (<9cm)',
+      mopping: 'Liftbare dweil + hot-water wash',
+      dock: 'Legen + wassen + drogen',
+      obstacleAvoidance: 'Excellent',
+      pets: true,
+      note: 'Laagste robot met premium features',
+    },
+    quizScore: {
+      hardFloors: 9,
+      mixed: 9,
+      carpet: 7,
+      lightMopping: 8,
+      kitchenStains: 9,
+      premiumStation: 10,
+      noPets: 8,
+      shortHair: 9,
+      longHair: 9,
+      clean: 8,
+      obstacles: 9,
+      lowFurniture: 10,
+      basicEmpty: 7,
+      mopClean: 9,
+      mostAutomatic: 10,
+    },
+  },
+  {
+    id: 'x8-pro-omni',
+    name: 'ECOVACS DEEBOT X8 Pro OMNI',
+    brand: 'ECOVACS',
+    badge: 'Beste dweil+stofzuig combo',
+    amazonLink: 'https://amzn.to/48TPt3h',
+    image: '/images/products/ecovacs-x8-pro.jpg',
+    bullets: [
+      'Beste gecombineerde stofzuig + dweil prestaties',
+      'Rotating mop heads voor koppige vlekken',
+      'Automatisch opheffend mopsysteem (voor tapijt)',
+      'Hot water mop washing in dock',
+      'Krachtige zuigkracht (8000Pa)',
+    ],
+    perfectFor: 'Perfect als dweilen net zo belangrijk is als stofzuigen (keuken/eetkamer focus).',
+    watchOut: 'Iets groter station — meet je ruimte op.',
+    specs: {
+      bestFor: 'Stofzuigen + dweilen (50/50)',
+      mopping: 'Roller mop (OZMO)',
+      dock: 'Legen + hot water wash + drogen',
+      obstacleAvoidance: 'Excellent',
+      pets: true,
+      note: 'Beste dweilprestaties in deze lijst',
+    },
+    quizScore: {
+      hardFloors: 10,
+      mixed: 9,
+      carpet: 7,
+      lightMopping: 7,
+      kitchenStains: 10,
+      premiumStation: 10,
+      noPets: 8,
+      shortHair: 9,
+      longHair: 8,
+      clean: 9,
+      obstacles: 9,
+      lowFurniture: 6,
+      basicEmpty: 6,
+      mopClean: 10,
+      mostAutomatic: 10,
+    },
+  },
+  {
+    id: 'l40-ultra',
+    name: 'Dreame L40 Ultra AE',
+    brand: 'Dreame',
+    badge: 'Populair in NL',
+    amazonLink: 'https://amzn.to/4b5lWF4',
+    image: '/images/products/dreame-l40-ultra.jpg',
+    bullets: [
+      'Veel verkocht op Nederlandse retailers',
+      'TriCut borstel (anti-haar-verstrengeling)',
+      'MopExtend arm (reikt tot de rand)',
+      'Automatische obstakel detectie + vermijding',
+      'Premium features voor goede prijs',
+    ],
+    perfectFor: 'Perfect als je populaire NL keuze wilt met bewezen track record.',
+    watchOut: 'App soms minder gepolijst dan Roborock.',
+    specs: {
+      bestFor: 'Huisdieren + hoeken bereiken',
+      mopping: 'Extending mop',
+      dock: 'Legen + wassen + drogen',
+      obstacleAvoidance: 'Goed',
+      pets: true,
+      note: 'Sterk in NL retail + reviews',
+    },
+    quizScore: {
+      hardFloors: 9,
+      mixed: 9,
+      carpet: 8,
+      lightMopping: 8,
+      kitchenStains: 8,
+      premiumStation: 9,
+      noPets: 8,
+      shortHair: 9,
+      longHair: 10,
+      clean: 8,
+      obstacles: 9,
+      lowFurniture: 7,
+      basicEmpty: 7,
+      mopClean: 9,
+      mostAutomatic: 9,
+    },
+  },
+  {
+    id: 'x10-pro-omni',
+    name: 'eufy X10 Pro Omni',
+    brand: 'eufy',
+    badge: 'Beste midrange',
+    amazonLink: 'https://amzn.to/3MS7kyX',
+    image: '/images/products/eufy-x10-pro.jpg',
+    bullets: [
+      'Beste prijs/kwaliteit in premium segment',
+      'Rolling mop + auto-lift voor tapijt',
+      'Slimme obstakel vermijding (AI.See)',
+      'Dock met auto-leeg + mop wash',
+      'Sterke zuigkracht (8000Pa)',
+    ],
+    perfectFor: 'Perfect als je premium features wilt zonder de hoogste prijs.',
+    watchOut: 'Minder merkbekendheid dan Roborock/Dreame.',
+    specs: {
+      bestFor: 'Budget-bewust premium',
+      mopping: 'Dubbele roterende dweilpads',
+      dock: 'Legen + wassen',
+      obstacleAvoidance: 'Goed',
+      pets: true,
+      note: 'Sweet spot prijs vs features',
+    },
+    quizScore: {
+      hardFloors: 8,
+      mixed: 9,
+      carpet: 8,
+      lightMopping: 8,
+      kitchenStains: 8,
+      premiumStation: 8,
+      noPets: 8,
+      shortHair: 9,
+      longHair: 8,
+      clean: 8,
+      obstacles: 8,
+      lowFurniture: 7,
+      basicEmpty: 9,
+      mopClean: 8,
+      mostAutomatic: 8,
+    },
+  },
+  {
+    id: 'd10-plus-gen2',
+    name: 'Dreame D10 Plus Gen 2',
+    brand: 'Dreame',
+    badge: 'Beste onder €500',
+    amazonLink: 'https://amzn.to/4javFMx',
+    image: '/images/products/dreame-d10-plus.jpg',
+    bullets: [
+      'Beste instap premium optie',
+      'Auto-empty base station (minder gedoe)',
+      'Goede navigatie (LiDAR)',
+      'Sterke zuigkracht voor de prijs',
+      'Solide app + multi-floor mapping',
+    ],
+    perfectFor: 'Perfect als je vooral wil stofzuigen met auto-empty en budget belangrijk is.',
+    watchOut: 'Dweilen is basis niveau — geen auto-wash dock.',
+    specs: {
+      bestFor: 'Stofzuigen focus (budget)',
+      mopping: 'Pads',
+      dock: 'Alleen legen (geen mop wash)',
+      obstacleAvoidance: 'Basis',
+      pets: true,
+      note: 'Entry premium, hoog volume',
+    },
+    quizScore: {
+      hardFloors: 7,
+      mixed: 8,
+      carpet: 8,
+      lightMopping: 7,
+      kitchenStains: 5,
+      premiumStation: 5,
+      noPets: 8,
+      shortHair: 8,
+      longHair: 7,
+      clean: 7,
+      obstacles: 6,
+      lowFurniture: 7,
+      basicEmpty: 10,
+      mopClean: 5,
+      mostAutomatic: 6,
+    },
+  },
+];
+
+export const alsoConsidered: Product[] = [
+  {
+    id: 'freo-z-ultra',
+    name: 'Narwal Freo Z Ultra',
+    brand: 'Narwal',
+    badge: 'Beste voor tegels',
+    amazonLink: 'https://amzn.to/3MPv7Q2',
+    image: '/images/products/narwal-freo-z.jpg',
+    bullets: [
+      'Specialist in dweilen (mopping-first design)',
+      'Dual rotating mops met druk',
+      'Beste voor grote tegelvloeren',
+      'TwinAI obstakel herkenning',
+      'Self-cleaning mop systeem',
+    ],
+    perfectFor: 'Perfect als je voornamelijk grote tegelvloeren hebt en dweilen prioriteit heeft.',
+    watchOut: 'Minder bekend merk in NL.',
+    specs: {
+      bestFor: 'Tegelvloeren (dweil-focus)',
+      mopping: 'Dual rotating',
+      dock: 'Legen + wash + dry',
+      obstacleAvoidance: 'Goed',
+      pets: true,
+      note: 'Mopping specialist',
+    },
+    quizScore: {
+      hardFloors: 10,
+      mixed: 7,
+      carpet: 6,
+      lightMopping: 7,
+      kitchenStains: 10,
+      premiumStation: 9,
+      noPets: 8,
+      shortHair: 8,
+      longHair: 7,
+      clean: 9,
+      obstacles: 8,
+      lowFurniture: 6,
+      basicEmpty: 6,
+      mopClean: 10,
+      mostAutomatic: 9,
+    },
+  },
+  {
+    id: 'x50-ultra',
+    name: 'Dreame X50 Ultra Complete',
+    brand: 'Dreame',
+    badge: 'Flagship / aspirational',
+    amazonLink: 'https://amzn.to/4pew55Z',
+    image: '/images/products/dreame-x50-ultra.jpg',
+    bullets: [
+      'Absolute top-of-the-line features',
+      'ProLeap system (klimt over drempels)',
+      'Extending side brush + mop',
+      'AI action + video call feature',
+      'Meest geavanceerd die er is',
+    ],
+    perfectFor: 'Perfect als je absoluut de nieuwste tech wilt en budget geen issue is.',
+    watchOut: 'Hoge prijs — alleen als je alle features gebruikt.',
+    specs: {
+      bestFor: 'Tech enthusiasts / drempels',
+      mopping: 'Extending roller',
+      dock: 'Legen + wash + dry + meer',
+      obstacleAvoidance: 'Excellent',
+      pets: true,
+      note: 'Duurste maar meest capabel',
+    },
+    quizScore: {
+      hardFloors: 10,
+      mixed: 10,
+      carpet: 9,
+      lightMopping: 9,
+      kitchenStains: 10,
+      premiumStation: 10,
+      noPets: 9,
+      shortHair: 10,
+      longHair: 10,
+      clean: 10,
+      obstacles: 10,
+      lowFurniture: 7,
+      basicEmpty: 7,
+      mopClean: 10,
+      mostAutomatic: 10,
+    },
+  },
+];
