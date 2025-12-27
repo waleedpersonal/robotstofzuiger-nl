@@ -2,19 +2,19 @@ export default function StructuredData() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Robotstofzuiger Keuzehulp",
-    url: "https://robotstofzuiger-keuzehulp.nl",
-    logo: "https://robotstofzuiger-keuzehulp.nl/images/products/roborock-qrevo-curv.jpg",
+    name: "Beste Robotstofzuiger",
+    url: "https://besterobotstofzuiger.it.com",
+    logo: "https://besterobotstofzuiger.it.com/images/products/roborock-qrevo-curv.jpg",
   };
 
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Robotstofzuiger Keuzehulp",
-    url: "https://robotstofzuiger-keuzehulp.nl",
+    name: "Beste Robotstofzuiger",
+    url: "https://besterobotstofzuiger.it.com",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://robotstofzuiger-keuzehulp.nl/?q={search_term_string}",
+      target: "https://besterobotstofzuiger.it.com/?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -25,7 +25,7 @@ export default function StructuredData() {
     name: "Beste Robotstofzuiger met Dweil (NL) — Keuzehulp 2025",
     description:
       "Vind de perfecte robotstofzuiger voor jouw huis in 60 seconden. Vergelijk 6 geteste modellen op Amazon.nl.",
-    url: "https://robotstofzuiger-keuzehulp.nl",
+    url: "https://besterobotstofzuiger.it.com",
     inLanguage: "nl-NL",
     datePublished: "2025-01-01",
     dateModified: "2025-01-01",

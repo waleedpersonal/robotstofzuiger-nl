@@ -1,7 +1,7 @@
-# Robots.txt for robotstofzuiger-keuzehulp.nl
+# Robots.txt for besterobotstofzuiger.it.com
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://robotstofzuiger-keuzehulp.nl/sitemap.xml
+Sitemap: https://besterobotstofzuiger.it.com/sitemap.xml
 

@@ -3,7 +3,7 @@ import "./globals.css";
 import Analytics from "@/components/Analytics";
 import StructuredData from "@/components/StructuredData";
 
-const siteUrl = "https://robotstofzuiger-keuzehulp.nl";
+const siteUrl = "https://besterobotstofzuiger.it.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "nl_NL",
     url: siteUrl,
-    siteName: "Robotstofzuiger Keuzehulp",
+    siteName: "Beste Robotstofzuiger",
     images: [
       {
         url: "/images/products/roborock-qrevo-curv.jpg",
