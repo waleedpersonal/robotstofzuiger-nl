@@ -1,0 +1,7 @@
+# Robots.txt for robotstofzuiger-keuzehulp.nl
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://robotstofzuiger-keuzehulp.nl/sitemap.xml
+
